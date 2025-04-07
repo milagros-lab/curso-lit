@@ -1,0 +1,50 @@
+/* Estilos base del botón */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  transition: background-color 0.3s ease;
+}
+.button-form {
+  width: auto;
+}
+
+/* Estilo por defecto */
+.button.default {
+  background-color: #007bffdd;
+  color: white;
+}
+.button.default:hover {
+  background-color: #052b54dd;
+}
+
+/* Estilo para botón deshabilitado */
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Clases adicionales para cambiar el fondo */
+.button.white {
+  background-color: #ffffff;
+  color: $text-color;
+}
+.button.white:hover {
+  background-color: #dbcaca;
+}
+.button.warning {
+  background-color: #e22828;
+  color: $text-color;
+}
+.button.link {
+  background-color: $background-color-link-button;
+  color: $text-color-white;
+  text-decoration: underline;
+}
+.button.link:hover {
+  background-color: #052b54dd;
+}

@@ -1,0 +1,13 @@
+// Definir variables y mixin globales en SCSS para todo mi proyecto
+$primary-color: red;
+$secondary-color: yellow;
+$text-color: #070e46;
+$text-color-white: #ffffff;
+$background-color: #f7f8f8;
+$background-color-link-button: #1d0eec;
+
+body {
+  background-color: orange;
+  margin: 0 auto;
+  width: 1224px;
+}

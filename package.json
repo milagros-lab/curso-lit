@@ -1,0 +1,33 @@
+{
+  "name": "curso-lit",
+  "version": "1.0.0",
+  "description": "Entorno básico para cacharrear en LIT",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist -r https://github.com/milagros-lab/curso-lit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@open-wc/testing": "^4.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-lit": "^1.15.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.0",
+    "sass": "^1.84.0",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  }
+}
