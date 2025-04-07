@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/curso-lit/", // añadido para el despliegue en GitHub Pages
   test: {
     environment: "jsdom", // Simula el DOM en los tests
   },
