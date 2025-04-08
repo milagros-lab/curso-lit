@@ -18,7 +18,7 @@ describe("lista-component", () => {
   });
 
   it("se espera que renderice los elementos de la lista cuando hay contenido proyectado", async () => {
-    const element = await fixture(html`
+    const elementMock = await fixture(html`
       <lista-component>
         <ul slot="lista">
           <li>Elemento 1</li>
@@ -28,11 +28,11 @@ describe("lista-component", () => {
     `);
 
     // Verifica que el slot "lista" exista
-    const slot = element.shadowRoot.querySelector("slot[name='lista']");
+    const slot = elementMock.shadowRoot.querySelector("slot[name='lista']");
     expect(slot).not.toBeNull();
 
     // Verifica que los elementos proyectados sean accesibles
-    const projectedContent = element.querySelector("ul[slot='lista']");
+    const projectedContent = elementMock.querySelector("ul[slot='lista']");
     expect(projectedContent).not.toBeNull();
 
     // Verifica que los elementos de la lista sean los esperados
